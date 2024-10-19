@@ -1,0 +1,42 @@
+:root{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1e1e1e;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+svg{
+    width: 70%;
+    height: 70%;
+}
+
+
+
+
+#aye {
+    position: fixed; /* Isola o elemento */
+   
+
+    transform-origin: center center;
+    animation: rotate_aye 2s linear infinite;
+  }
+  
+  @keyframes rotate_aye {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}

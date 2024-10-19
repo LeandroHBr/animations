@@ -1,0 +1,112 @@
+:root{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    animation: color_comute 15s infinite;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+svg{
+    width: 70%;
+    height: 70%;
+}
+
+#pupil{
+    animation: move_eye 5s infinite;
+}
+
+#body{
+    transform-origin: center center;
+    animation: color_comute 15s infinite;
+}
+
+#head{
+    transform-origin: center center;
+    animation: color_comute 15s infinite;
+}
+
+#piece_body{
+    transform-origin: center center;
+
+    animation: color_comute 15s infinite;
+}
+
+@keyframes move_eye{
+    0%{
+        transform: translateY(10px);
+    }
+    20%{
+        transform: translateX(10px);
+    }
+    40%{
+        transform: translateX(0x);
+    }
+    60%{
+        transform: translateX(-10px);
+    }
+    80%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+   
+}
+
+@keyframes color_comute{
+    0%,18%{
+        background-color: #AE1D14;
+        fill: #AE1D14;
+    }   
+    
+    19%{
+        background-color: #3e980b;
+        transform: scale(0.99);
+    }s
+    20%,38%{
+        transform: scale(1);
+        fill: #3e980b; 
+    }
+    39%{
+        background-color: #f6dd28;
+        transform: scale(0.99);
+        
+    }
+    40%,58%{
+        
+        fill:#f6dd28;
+        transform: scale(1);
+    }
+    59%{
+        background-color: #7c2881;
+        transform: scale(0.99);
+    }
+    60%,78%{
+        fill:#7c2881;
+        transform: scale(1);
+    }
+    79%{
+        background-color: #1e1e1e;
+        transform: scale(0.99);
+    }
+    80%,99%{
+        fill: #1e1e1e;
+        transform: scale(1);
+    }
+    100%{
+        background-color: #AE1D14;
+        transform: scale(0.99);
+    }
+
+}
+
